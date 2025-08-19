@@ -5,18 +5,18 @@
      <!--inclusão de parcial nav-->
       <%- include('./parciais/nav.ejs') %>
 
-  <div class = "conteudo-blog">
-    <h2>história</h2>
-    <% if (blogs.length > 0) { %>
-    <% blogs.forEach(blog => { %>
+  <div class = "conteudo-sites">
+    <h2>Resumo</h2>
+    <% if (sites.length > 0) { %>
+    <% sites.forEach(sites => { %>
 
-      <h3 class="titulo"><%= blog.titulo %></h3>
-      <p class="conteudo"><%= blog.conteudo %></p>
+      <h3 class="titulo"><%= sites.titulo %></h3>
+      <p class="conteudo"><%= sites.conteudo %></p>
       
 
       <% }) %>
       <% } else { %>
-        <p>A lista do blog está vazia </p>
+        <p>A lista do site está vazia </p>
         <% } %>
   </div>
   <%- include('./parciais/footer.ejs') %>
